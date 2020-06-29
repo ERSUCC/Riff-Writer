@@ -20,6 +20,63 @@
     return YES;
 }
 
+#pragma mark - CoreData stack
+
+@synthesize managedObjectContext = _managedObjectContext;
+@synthesize managedObjectModel = _managedObjectModel;
+@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+
+-(NSURL*)applicationDocumentsDirectory {
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+-(NSManagedObjectModel*)managedObjectModel {
+    if (_managedObjectModel != nil) {
+        return _managedObjectModel;
+    }
+    
+    NSURL* modelUrl = [[NSBundle mainBundle] URLForResource:@"RiffStorage" withExtension:@"momd"];
+    
+    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelUrl];
+    
+    return _managedObjectModel;
+}
+
+-(NSManagedObjectContext*)managedObjectContext {
+    if (_managedObjectContext != nil) {
+        return _managedObjectContext;
+    }
+    
+    NSPersistentStoreCoordinator* coordinator = [self persistentStoreCoordinator];
+    
+    _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+    
+    [_managedObjectContext setPersistentStoreCoordinator:coordinator];
+    
+    return _managedObjectContext;
+}
+
+-(NSPersistentStoreCoordinator*)persistentStoreCoordinator {
+    if (_persistentStoreCoordinator != nil) {
+        return _persistentStoreCoordinator;
+    }
+    
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    
+    NSURL* storeUrl = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"RiffStorage.sqlite"];
+    
+    [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:@{NSMigratePersistentStoresAutomaticallyOption:@YES, NSInferMappingModelAutomaticallyOption:@YES} error:nil];
+    
+    return _persistentStoreCoordinator;
+}
+
+-(void)saveContext {
+    NSManagedObjectContext* context = self.managedObjectContext;
+    
+    if (context != nil) {
+        [context save:nil];
+    }
+}
 
 #pragma mark - UISceneSession lifecycle
 

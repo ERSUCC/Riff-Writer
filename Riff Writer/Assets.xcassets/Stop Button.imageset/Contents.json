@@ -1,0 +1,65 @@
+{
+  "images" : [
+    {
+      "filename" : "Stop Button.png",
+      "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 22,
+          "left" : 21,
+          "right" : 24,
+          "top" : 24
+        },
+        "center" : {
+          "height" : 1,
+          "mode" : "tile",
+          "width" : 1
+        },
+        "mode" : "9-part"
+      },
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Stop Button@2x.png",
+      "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 46,
+          "left" : 45,
+          "right" : 47,
+          "top" : 46
+        },
+        "center" : {
+          "height" : 1,
+          "mode" : "tile",
+          "width" : 1
+        },
+        "mode" : "9-part"
+      },
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Stop Button@3x.png",
+      "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 68,
+          "left" : 71,
+          "right" : 68,
+          "top" : 72
+        },
+        "center" : {
+          "height" : 1,
+          "mode" : "tile",
+          "width" : 1
+        },
+        "mode" : "9-part"
+      },
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

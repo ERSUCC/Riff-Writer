@@ -1,0 +1,65 @@
+{
+  "images" : [
+    {
+      "filename" : "Delete Button.png",
+      "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 29,
+          "left" : 30,
+          "right" : 30,
+          "top" : 27
+        },
+        "center" : {
+          "height" : 1,
+          "mode" : "tile",
+          "width" : 1
+        },
+        "mode" : "9-part"
+      },
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Delete Button@2x.png",
+      "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 54,
+          "left" : 58,
+          "right" : 57,
+          "top" : 59
+        },
+        "center" : {
+          "height" : 1,
+          "mode" : "tile",
+          "width" : 1
+        },
+        "mode" : "9-part"
+      },
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Delete Button@3x.png",
+      "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 83,
+          "left" : 95,
+          "right" : 91,
+          "top" : 95
+        },
+        "center" : {
+          "height" : 1,
+          "mode" : "tile",
+          "width" : 1
+        },
+        "mode" : "9-part"
+      },
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

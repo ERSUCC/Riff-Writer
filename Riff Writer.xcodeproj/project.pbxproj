@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB29796F240EC1B100FA4356 /* metronome.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB29796E240EC1B100FA4356 /* metronome.wav */; };
 		EB3E33192406F05B00784F0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E33182406F05B00784F0B /* AppDelegate.m */; };
 		EB3E331C2406F05B00784F0B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E331B2406F05B00784F0B /* SceneDelegate.m */; };
 		EB3E331F2406F05B00784F0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E331E2406F05B00784F0B /* ViewController.m */; };
@@ -16,6 +17,13 @@
 		EB3E332A2406F05E00784F0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E33292406F05E00784F0B /* main.m */; };
 		EB3E33342406F05E00784F0B /* Riff_WriterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E33332406F05E00784F0B /* Riff_WriterTests.m */; };
 		EB3E333F2406F05E00784F0B /* Riff_WriterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E333E2406F05E00784F0B /* Riff_WriterUITests.m */; };
+		EB3E335124087AE200784F0B /* Riff.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E335024087AE200784F0B /* Riff.m */; };
+		EB3E335424096E1E00784F0B /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E335324096E1E00784F0B /* Note.m */; };
+		EB3E335C2409BBAC00784F0B /* Divider.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3E335B2409BBAC00784F0B /* Divider.png */; };
+		EB4749F62449FB3100474978 /* Piano.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4749F52449FB3100474978 /* Piano.m */; };
+		EB4749F9244A0CEB00474978 /* SalC5Light2.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = EB4749F8244A0CEB00474978 /* SalC5Light2.sf2 */; };
+		EBA147A12453436E003CDA3E /* RiffStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBA1479F2453436E003CDA3E /* RiffStorage.xcdatamodeld */; };
+		EBF92597244CBE2200C7835F /* RiffViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF92596244CBE2200C7835F /* RiffViewer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB29796E240EC1B100FA4356 /* metronome.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metronome.wav; sourceTree = "<group>"; };
 		EB3E33142406F05B00784F0B /* Riff Writer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Riff Writer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3E33172406F05B00784F0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB3E33182406F05B00784F0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +63,17 @@
 		EB3E333A2406F05E00784F0B /* Riff WriterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Riff WriterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3E333E2406F05E00784F0B /* Riff_WriterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Riff_WriterUITests.m; sourceTree = "<group>"; };
 		EB3E33402406F05E00784F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB3E334F24087AE200784F0B /* Riff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Riff.h; sourceTree = "<group>"; };
+		EB3E335024087AE200784F0B /* Riff.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Riff.m; sourceTree = "<group>"; };
+		EB3E335224096E1E00784F0B /* Note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Note.h; path = "Riff Writer/Note.h"; sourceTree = SOURCE_ROOT; };
+		EB3E335324096E1E00784F0B /* Note.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = "Riff Writer/Note.m"; sourceTree = SOURCE_ROOT; };
+		EB3E335B2409BBAC00784F0B /* Divider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Divider.png; sourceTree = "<group>"; };
+		EB4749F42449FB3100474978 /* Piano.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Piano.h; sourceTree = "<group>"; };
+		EB4749F52449FB3100474978 /* Piano.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Piano.m; sourceTree = "<group>"; };
+		EB4749F8244A0CEB00474978 /* SalC5Light2.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SalC5Light2.sf2; sourceTree = "<group>"; };
+		EBA147A02453436E003CDA3E /* RiffData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RiffData.xcdatamodel; sourceTree = "<group>"; };
+		EBF92595244CBE2200C7835F /* RiffViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RiffViewer.h; sourceTree = "<group>"; };
+		EBF92596244CBE2200C7835F /* RiffViewer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RiffViewer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB29796B240EAA3700FA4356 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EB4749F8244A0CEB00474978 /* SalC5Light2.sf2 */,
+				EB29796E240EC1B100FA4356 /* metronome.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		EB3E330B2406F05B00784F0B = {
 			isa = PBXGroup;
 			children = (
@@ -104,17 +133,28 @@
 		EB3E33162406F05B00784F0B /* Riff Writer */ = {
 			isa = PBXGroup;
 			children = (
+				EB3E334C2406F6C200784F0B /* Images */,
+				EB29796B240EAA3700FA4356 /* Sounds */,
 				EB3E33172406F05B00784F0B /* AppDelegate.h */,
 				EB3E33182406F05B00784F0B /* AppDelegate.m */,
 				EB3E331A2406F05B00784F0B /* SceneDelegate.h */,
 				EB3E331B2406F05B00784F0B /* SceneDelegate.m */,
 				EB3E331D2406F05B00784F0B /* ViewController.h */,
 				EB3E331E2406F05B00784F0B /* ViewController.m */,
-				EB3E33202406F05B00784F0B /* Main.storyboard */,
-				EB3E33232406F05E00784F0B /* Assets.xcassets */,
-				EB3E33252406F05E00784F0B /* LaunchScreen.storyboard */,
-				EB3E33282406F05E00784F0B /* Info.plist */,
+				EBF92595244CBE2200C7835F /* RiffViewer.h */,
+				EBF92596244CBE2200C7835F /* RiffViewer.m */,
+				EB4749F42449FB3100474978 /* Piano.h */,
+				EB4749F52449FB3100474978 /* Piano.m */,
+				EB3E334F24087AE200784F0B /* Riff.h */,
+				EB3E335024087AE200784F0B /* Riff.m */,
+				EB3E335224096E1E00784F0B /* Note.h */,
+				EB3E335324096E1E00784F0B /* Note.m */,
 				EB3E33292406F05E00784F0B /* main.m */,
+				EB3E33202406F05B00784F0B /* Main.storyboard */,
+				EB3E33252406F05E00784F0B /* LaunchScreen.storyboard */,
+				EB3E33232406F05E00784F0B /* Assets.xcassets */,
+				EB3E33282406F05E00784F0B /* Info.plist */,
+				EBA1479F2453436E003CDA3E /* RiffStorage.xcdatamodeld */,
 			);
 			path = "Riff Writer";
 			sourceTree = "<group>";
@@ -135,6 +175,14 @@
 				EB3E33402406F05E00784F0B /* Info.plist */,
 			);
 			path = "Riff WriterUITests";
+			sourceTree = "<group>";
+		};
+		EB3E334C2406F6C200784F0B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EB3E335B2409BBAC00784F0B /* Divider.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,9 +288,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB4749F9244A0CEB00474978 /* SalC5Light2.sf2 in Resources */,
 				EB3E33272406F05E00784F0B /* LaunchScreen.storyboard in Resources */,
 				EB3E33242406F05E00784F0B /* Assets.xcassets in Resources */,
 				EB3E33222406F05B00784F0B /* Main.storyboard in Resources */,
+				EB29796F240EC1B100FA4356 /* metronome.wav in Resources */,
+				EB3E335C2409BBAC00784F0B /* Divider.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +318,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF92597244CBE2200C7835F /* RiffViewer.m in Sources */,
+				EB3E335124087AE200784F0B /* Riff.m in Sources */,
+				EBA147A12453436E003CDA3E /* RiffStorage.xcdatamodeld in Sources */,
 				EB3E331F2406F05B00784F0B /* ViewController.m in Sources */,
 				EB3E33192406F05B00784F0B /* AppDelegate.m in Sources */,
+				EB3E335424096E1E00784F0B /* Note.m in Sources */,
 				EB3E332A2406F05E00784F0B /* main.m in Sources */,
 				EB3E331C2406F05B00784F0B /* SceneDelegate.m in Sources */,
+				EB4749F62449FB3100474978 /* Piano.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +504,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.isaacbrown.Riff-Writer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +521,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.isaacbrown.Riff-Writer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -585,6 +641,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EBA1479F2453436E003CDA3E /* RiffStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EBA147A02453436E003CDA3E /* RiffData.xcdatamodel */,
+			);
+			currentVersion = EBA147A02453436E003CDA3E /* RiffData.xcdatamodel */;
+			path = RiffStorage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EB3E330C2406F05B00784F0B /* Project object */;
 }
